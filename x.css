@@ -68,9 +68,9 @@
 @media(max-width: 480px){
 
 	.content{
+	width: 320px
 	display: table;
 	margin: 100px 10px 10px 10px;
-	position:absolute;
 }
 
 #area{
