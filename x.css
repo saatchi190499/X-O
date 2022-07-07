@@ -1,67 +1,71 @@
-@media (max-width: 480px) { 
 *{
 	margin: 0;
 	padding: 0;
 }
 
-.content{
-	display: flex;
-	margin: 100px 50px 50px 50px;
-}
+@media only screen and (max-width: 480px) { 
 
-#area{
-	width: 156px;
-	border: 1px solid #000;
-	padding: 5px;
-	background-color: black;
-	border-color: yellowgreen;
-	color: yellowgreen;
+	.wrapper{
+		width: 300px;
+	}
+	.content{
+		margin: 100px 50px 50px 50px;
+	}
 
-}
+	#area{
+		max-width: 180px;
+		width: 156px;
+		border: 1px solid #000;
+		padding: 5px;
+		background-color: black;
+		border-color: yellowgreen;
+		color: yellowgreen;
 
-.cell{
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	display: inline-block;
-	font-size: 25px;
-	border: 1px solid #000;
-	vertical-align: middle;
-	transition: background .1s;
-	cursor: pointer;
-	border-color: yellowgreen;
-}
+	}
 
-.currentPlayer{
-	width: 140px;
-	font-size: 25px;
-	display: flex;
-	align-items: center;
-	background-color:black;
-	color: yellowgreen;
-}
+	.cell{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		display: inline-block;
+		font-size: 25px;
+		border: 1px solid #000;
+		vertical-align: middle;
+		transition: background .1s;
+		cursor: pointer;
+		border-color: yellowgreen;
+	}
 
-.stat{
-	display: flex;
-	align-items: center;
-	font-size: 26px;
-	
+	.currentPlayer{
+		width: 140px;
+		font-size: 25px;
+		display: flex;
+		align-items: center;
+		background-color:black;
+		color: yellowgreen;
+	}
 
-}
+	.stat{
+		display: flex;
+		align-items: center;
+		font-size: 26px;
+		
 
-.stat table{
-	border-collapse: collapse;
+	}
+
+	.stat table{
+		border-collapse: collapse;
 
 
-}
+	}
 
-.stat table, .stat th , .stat td{
-	border: 1px solid #000;
-	padding: 5px;
-	text-align: center;
-	border-color: yellowgreen;
-	background-color: grey;
+	.stat table, .stat th , .stat td{
+		border: 1px solid #000;
+		padding: 5px;
+		text-align: center;
+		border-color: yellowgreen;
+		background-color: grey;
 
-}
+	}
 }
