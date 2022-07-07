@@ -6,7 +6,7 @@
 .content{
 	display: flex;
 	margin: 100px 10px 10px 10px;
-	position:relative;
+	position:fixed;
 }
 
 #area{
@@ -46,10 +46,14 @@
 	display: flex;
 	align-items: center;
 	font-size: 15px;
+	
+
 }
 
 .stat table{
 	border-collapse: collapse;
+
+
 }
 
 .stat table, .stat th , .stat td{
@@ -58,4 +62,70 @@
 	text-align: center;
 	border-color: yellowgreen;
 	background-color: grey;
+
+}
+
+@media(max-width: 480px){
+
+	.content{
+	display: table;
+	margin: 100px 10px 10px 10px;
+	position:absolute;
+}
+
+#area{
+	width: 156px;
+	border: 1px solid #000;
+	padding: 5px;
+	background-color: black;
+	border-color: yellowgreen;
+	color: yellowgreen;
+
+}
+
+.cell{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	font-size: 25px;
+	border: 1px solid #000;
+	vertical-align: middle;
+	transition: background .1s;
+	cursor: pointer;
+	border-color: yellowgreen;
+}
+
+.currentPlayer{
+	width: 80px;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	background-color:black;
+	color: yellowgreen;
+}
+
+.stat{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	
+
+}
+
+.stat table{
+	border-collapse: collapse;
+
+
+}
+
+.stat table, .stat th , .stat td{
+	border: 1px solid #000;
+	padding: 5px;
+	text-align: center;
+	border-color: yellowgreen;
+	background-color: grey;
+
+}
 }
